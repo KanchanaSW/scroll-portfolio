@@ -4,6 +4,10 @@ A [Cursor](https://cursor.com) and [Claude Code](https://claude.com/claude-code)
 
 Not a CSS `overflow-x` gallery. Not a concept explainer (that is conceptcraft).
 
+## Live example
+
+[kanchanasw.netlify.app](https://kanchanasw.netlify.app/) — a personal portfolio built with this skill.
+
 ## Install
 
 Claude Code:

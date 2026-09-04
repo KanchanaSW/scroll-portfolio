@@ -60,3 +60,12 @@ The page is a pinned stage. A horizontal track holds nine scenes. Wheel, trackpa
 ## After install
 
 Restart Cursor / start a new Claude Code session so the skill description is in the catalog. Attach a résumé or CV and ask to scaffold or extend a scroll-portfolio; the agent should read `SKILL.md` then `references/camera.md` before writing animation.
+
+## Credits
+
+- Format and skill by [Kanchana Walagambahu](https://github.com/KanchanaSW).
+- Skill packaging follows [conceptcraft](https://github.com/maraja/conceptcraft) by [Amit Maraj](https://github.com/maraja).
+
+## License
+
+MIT — see [LICENSE](LICENSE).

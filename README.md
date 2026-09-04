@@ -32,6 +32,9 @@ That links:
 
 Both runtimes pick up `SKILL.md` on the next session. Then, in any project:
 
+1. Add your résumé or CV to the conversation (attach the file, paste the text, or drop in a path/URL). Markdown (`.md`) is best; PDF works; Word is the least reliable.
+2. Ask:
+
 > build my cinematic scroll-portfolio from this résumé
 
 ## What's in the box
@@ -56,4 +59,4 @@ The page is a pinned stage. A horizontal track holds nine scenes. Wheel, trackpa
 
 ## After install
 
-Restart Cursor / start a new Claude Code session so the skill description is in the catalog. Ask to scaffold or extend a scroll-portfolio; the agent should read `SKILL.md` then `references/camera.md` before writing animation.
+Restart Cursor / start a new Claude Code session so the skill description is in the catalog. Attach a résumé or CV and ask to scaffold or extend a scroll-portfolio; the agent should read `SKILL.md` then `references/camera.md` before writing animation.

@@ -47,7 +47,7 @@ Violating one re-creates a failure that has already been paid for.
 - Scaffolding or extending this stack (Vite 7, React 19, Tailwind v4, shadcn, Lenis, GSAP)
 - Adding a scene, Flip project zoom, command palette, or progress rail to an existing scroll-portfolio
 
-**Not this skill:** a concept explainer zoom-canvas (that is conceptcraft). A conventional multi-route marketing site. A vertically stacked résumé with no camera.
+**Not this skill:** a concept explainer zoom-canvas (that is conceptcraft). A data story with a sticky/pinned chart (that is scrollytelling-data). A conventional multi-route marketing site. A vertically stacked résumé with no camera.
 
 ## Workflow
 

@@ -2,7 +2,7 @@
 
 A [Cursor](https://cursor.com) and [Claude Code](https://claude.com/claude-code) skill that builds a **cinematic horizontal-scroll portfolio**: one résumé on a fixed-viewport stage, Lenis owning scroll, GSAP's ticker owning the only `requestAnimationFrame` loop, ScrollTrigger mapping vertical progress onto track `x` and camera `scale`.
 
-Not a CSS `overflow-x` gallery. Not a concept explainer (that is conceptcraft).
+Not a CSS `overflow-x` gallery. Not a concept explainer (that is conceptcraft). Not a data story with a sticky chart (that is [scrollytelling-data](./scrollytelling-data/)).
 
 ## Install
 
@@ -29,6 +29,7 @@ That links:
 
 - `~/.cursor/skills/scroll-portfolio` — Cursor
 - `~/.claude/skills/scroll-portfolio` — Claude Code
+- `~/.cursor/skills/scrollytelling-data` and `~/.claude/skills/scrollytelling-data` — companion data-story skill
 
 Both runtimes pick up `SKILL.md` on the next session. Then, in any project:
 
@@ -48,7 +49,10 @@ references/structure.md          src/ tree
 references/gotchas.md            jank / drift / double-scroll table
 templates/                       copy-paste Lenis provider, camera hook, content
 scripts/install.sh               dual-runtime symlink
+scrollytelling-data/             companion skill: sticky chart, f(stepIndex)
 ```
+
+Companion skill: [scrollytelling-data](./scrollytelling-data/) — same camera philosophy (one scroll owner, one RAF, derived state), applied to a data story.
 
 ## The format in one paragraph
 

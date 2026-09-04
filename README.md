@@ -1,0 +1,47 @@
+# scroll-portfolio
+
+A [Cursor](https://cursor.com) and [Claude Code](https://claude.com/claude-code) skill that builds a **cinematic horizontal-scroll portfolio**: one résumé on a fixed-viewport stage, Lenis owning scroll, GSAP's ticker owning the only `requestAnimationFrame` loop, ScrollTrigger mapping vertical progress onto track `x` and camera `scale`.
+
+Not a CSS `overflow-x` gallery. Not a concept explainer (that is conceptcraft).
+
+## Install
+
+From this repo:
+
+```bash
+chmod +x scripts/install.sh
+./scripts/install.sh
+```
+
+That symlinks the skill into:
+
+- `~/.cursor/skills/scroll-portfolio` — Cursor
+- `~/.claude/skills/scroll-portfolio` — Claude Code
+
+Both runtimes pick up `SKILL.md` on the next session. Then, in any project:
+
+> build my cinematic scroll-portfolio from this résumé
+
+## What's in the box
+
+```
+SKILL.md                         laws + ordered workflow
+references/stack.md              Vite 7, Tailwind v4, shadcn, GSAP register
+references/camera.md             Lenis ticker, pan, zoom, containerAnimation
+references/content.md            portfolio.ts shape
+references/scenes.md             nine scenes + Flip project zoom
+references/chrome.md             palette, rail, keyboard, theme, SEO
+references/a11y.md               matchMedia, reduced motion, print
+references/structure.md          src/ tree
+references/gotchas.md            jank / drift / double-scroll table
+templates/                       copy-paste Lenis provider, camera hook, content
+scripts/install.sh               dual-runtime symlink
+```
+
+## The format in one paragraph
+
+The page is a pinned stage. A horizontal track holds nine scenes. Wheel, trackpad, and touch go through Lenis; GSAP's ticker calls `lenis.raf`; ScrollTrigger scrubs the track sideways and dips the camera scale to ~0.82 at scene seams (pull back to see the map, push in to read). In-scene reveals use `containerAnimation` on the pan tween. Below 768px and for `prefers-reduced-motion`, the camera is never built — it is a normal vertical document. Content is typed data in one file; scenes are presentation only.
+
+## After install
+
+Restart Cursor / start a new Claude Code session so the skill description is in the catalog. Ask to scaffold or extend a scroll-portfolio; the agent should read `SKILL.md` then `references/camera.md` before writing animation.

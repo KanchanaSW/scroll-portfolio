@@ -6,14 +6,26 @@ Not a CSS `overflow-x` gallery. Not a concept explainer (that is conceptcraft).
 
 ## Install
 
-From this repo:
+Claude Code:
+
+```bash
+git clone https://github.com/KanchanaSW/scroll-portfolio-skill ~/.claude/skills/scroll-portfolio
+```
+
+Cursor:
+
+```bash
+git clone https://github.com/KanchanaSW/scroll-portfolio-skill ~/.cursor/skills/scroll-portfolio
+```
+
+Or, from a local checkout, symlink into both runtimes:
 
 ```bash
 chmod +x scripts/install.sh
 ./scripts/install.sh
 ```
 
-That symlinks the skill into:
+That links:
 
 - `~/.cursor/skills/scroll-portfolio` — Cursor
 - `~/.claude/skills/scroll-portfolio` — Claude Code

@@ -66,7 +66,7 @@ Lenis often transforms its content node. GSAP camera wrappers set `will-change: 
 | "PM said every beat must play" | Beats play when the reader stops on them. The chart at index N is always `states[N]`. |
 | "Index plus onEnter is belt and suspenders" | Two writers. They will disagree. |
 | "addSeries is easier than full snapshots" | Diffs are the up≠down bug. |
+| "Don't rip out the camera wrapper" | Keep `.camera`. `#scrolly` is a sibling of `#stage`, never a descendant. |
 | "Just bump z-index / transform:none on sticky" | The ancestor is the containing block. The child cannot opt out. |
 | "Fake sticky with RAF writing top" | Second animation source. Pin instead. |
-| "Don't rip out the camera wrapper" | This format is not that camera. Sibling of `#stage`, not a descendant. |
 | "Resize should replay the enter so the chart rebuilds" | Rebuild from `states[index]`. Replay is a side effect. |
